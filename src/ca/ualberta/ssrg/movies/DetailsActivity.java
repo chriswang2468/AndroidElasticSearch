@@ -1,5 +1,9 @@
 package ca.ualberta.ssrg.movies;
 
+import java.io.IOException;
+
+import org.apache.http.client.ClientProtocolException;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -63,10 +67,8 @@ public class DetailsActivity extends Activity {
 
 		@Override
 		public void run() {
-			movie = movieManager.getMovie(id);
 
-			runOnUiThread(doUpdateGUIDetails);
+				movie = movieManager.getMovie(id);
+				}
 		}
-	}
-
 }

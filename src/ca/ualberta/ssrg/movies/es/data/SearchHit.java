@@ -1,5 +1,7 @@
 package ca.ualberta.ssrg.movies.es.data;
 
+import ca.ualberta.ssrg.movies.es.Movie;
+
 public class SearchHit<T> {
 	private String _index;
 	private String _type;
@@ -65,6 +67,13 @@ public class SearchHit<T> {
 		return "SimpleElasticSearchResponse [_index=" + _index + ", _type="
 				+ _type + ", _id=" + _id + ", _version=" + _version
 				+ ", found=" + found + ", _source=" + _source + "]";
+	}
+
+	public Hits<Movie> getHits()
+	{
+
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
